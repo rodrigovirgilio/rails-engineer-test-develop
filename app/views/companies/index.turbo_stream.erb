@@ -1,0 +1,5 @@
+<%= turbo_stream.replace "companies_list" do %>
+  <%= turbo_frame_tag "companies_list" do %>
+    <%= render "companies_list", companies: @companies, query: @query %>
+  <% end %>
+<% end %>
